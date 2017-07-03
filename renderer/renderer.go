@@ -113,6 +113,8 @@ func drawChar(ch byte, img *image.Paletted, startX int, startY int) {
 // Render text in output stream
 func Render(text string, output io.Writer) {
 	text = strings.ToUpper(text)
+	text = strings.Replace(text, "Ä", "A", -1)
+	text = strings.Replace(text, "Ö", "O", -1)
 
 	width := len(text)*letterWidth + (len(text)-1)*letterInterval + margin*2
 	height := letterHeight + margin*2
