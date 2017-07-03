@@ -7,5 +7,5 @@ import (
 )
 
 func main() {
-	renderer.Render("Hello, world!", os.Stdout)
+	renderer.Render("ba", os.Stdout)
 }
