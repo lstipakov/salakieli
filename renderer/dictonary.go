@@ -49,4 +49,5 @@ func init() {
 	dict['X'] = edge1 | edge2 | edge3 | edge4 | edge5 | edge6 | edge7 | edge8 | edge10 | edge12 | edge14 | edge16
 	dict['Y'] = edge1 | edge2 | edge3 | edge4 | edge5 | edge6 | edge7 | edge8 | edge10 | edge12 | edge13 | edge15 | edge16
 	dict['Z'] = edge3 | edge4 | edge7 | edge8 | edge9 | edge10 | edge12 | edge13 | edge14 | edge16
+	dict['*'] = edge1 | edge2 | edge3 | edge4 | edge5 | edge6 | edge7 | edge8 | edge9 | edge10 | edge11 | edge12 | edge13 | edge14 | edge15 | edge16
 }
