@@ -53,6 +53,12 @@ func drawLine(img *image.Paletted, x0 int, y0 int, x1 int, y1 int) {
 }
 
 func drawChar(ch byte, img *image.Paletted, startX int, startY int) {
+	_, ok := dict[ch]
+	if !ok {
+		// do nothing if char does not exist in dict
+		return
+	}
+
 	if (dict[ch] & edge1) != 0 {
 		drawLine(img, startX, startY, startX+letterWidth/2, startY)
 	}

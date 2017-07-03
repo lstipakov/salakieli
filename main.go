@@ -7,5 +7,5 @@ import (
 )
 
 func main() {
-	renderer.Render("ba", os.Stdout)
+	renderer.Render("zlata", os.Stdout)
 }
